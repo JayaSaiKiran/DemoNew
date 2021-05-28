@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    footer {
+        position: relative;
+        padding: 6.25rem 0;
+        background-color: #000000;
+    }
+    .foogrid {
+        display: grid;
+        grid-template-columns: minmax(auto, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+    }
+    .footitle {
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: normal;
+        color: #fff;
+    }
+  
+/* Newsletter Section */
+.newsletter{
+max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+.newsletter form {
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    text-align: left;
+}
+.newsletter form input[type="email"] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+.newsletter form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #FF9800;
+    color: #fff;
+    border-radius: 4px;
+}
+.newsletter form input[type="submit"]:hover {
+    opacity: 0.9;
+}
+.newsletter input:focus,
+.newsletter input:hover
+{
+    outline: none;
+}
+
+
+
+
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.list-pipe-separator > li:not(:last-child) > a:after {
+    content: '|';
+    margin: 0 0.375rem;
+}
+
+.foolinks ul {
+    display: flex;
+    justify-content: center;
+}
+.foolinks ul li a {
+    font-size: 0.875rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+</style>
+<body>
+    
+    <footer>
+        <div class="foogrid">
+            <div class="footitle">
+                News Letter
+            </div>
+            <div class="newsletter">
+
+                <form action="" method="">
+                    <input type="email" name="email" placeholder="Enter email address"><input type="submit" value="Subscribe">
+                </form>
+               
+            </div>
+            <div class="foolinks">
+
+                <ul class="list-unstyled d-flex list-pipe-separator">
+                    <li><a href="#">&copy; 2019 Indegene. All rights reserved</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">CSR Policy</a></li>
+                  </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
